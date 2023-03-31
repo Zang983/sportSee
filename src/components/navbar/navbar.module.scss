@@ -1,0 +1,34 @@
+.navbar{
+    width:115px;
+    min-height:100lvh;
+    box-sizing: border-box;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: #020203;
+    color:white;
+    padding-top:20%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom:60px;
+    align-items: center;
+    @media screen and (max-width:1400px){
+        box-sizing:content-box;
+        height:101.5%;
+    }
+    nav{
+        ul{
+            display:flex;
+            flex-direction: column;
+            gap:20px;
+            list-style-type: none;
+        }
+    }
+    p{
+        transform: rotate(-90deg) translateX(40%);
+        min-width:200px;
+        
+        font-size:12px;
+    }
+}

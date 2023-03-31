@@ -1,0 +1,14 @@
+.radialChart {
+    width: 258px;
+    height: 263px;
+    border-radius: 5px;
+    background-color: #FBFBFB;
+    position:relative;
+}
+
+.radialChartTitle{
+position:absolute;
+color:black;
+opacity: 1;
+left:15px;
+}

@@ -1,0 +1,2 @@
+rajouter une page d'erreur en cas de non récupération des données.
+JSdoc à ajouter pour les fonctions.

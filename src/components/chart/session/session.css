@@ -1,0 +1,34 @@
+.sessionChart {
+    width: 258px;
+    height: 263px;
+    border-radius: 5px;
+    background-color: #FF0000;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+}
+
+.tooltip{
+    padding:8px;
+    background-color:white;
+    font-size:12px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:inherit;
+}
+.tooltip:active,.tooltip::selection,.tooltip:hover{
+    border:none;
+    outline:none;
+}
+.sessionTitle{
+    color:white;
+    opacity: 50%;
+    width:65%;
+    font-weight:500;
+    font-size:15px;
+    position:absolute;
+    left:34px;
+    top:25px;
+    margin:0;
+}

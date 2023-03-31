@@ -1,0 +1,58 @@
+.dailyGraph{
+    box-sizing: border-box;
+    position:relative;
+    background-color:#FBFBFB;
+    height:320px;
+    width:835px;
+    border-radius:5px;
+    padding:24px 32px;
+}
+.activityBarChartTooltip{
+    display:flex;
+    flex-direction: column;
+    background-color: #E60000;
+    gap:25px;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 6px;
+}
+
+.activityBarChartTooltip p{
+    color:white;
+}
+.dailyGraphTitle{
+    color:#20253A;
+    font-size:15px;
+    opacity:1;
+}
+.dailyGraph header{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+.dailyGraph .legend{
+    display:flex;
+    padding-right:10px;
+    gap:50px;
+}
+.legend p{
+    position:relative;
+}
+.legend p::before{
+    content:'';
+    position:absolute;
+    display:block;
+    width:8px;
+    height:8px;
+    border-radius: 50%;
+    top:50%;
+    left:-20px;
+    transform : translateY(-50%)
+}
+.heightLegend::before{
+    background-color: #282D30;
+}
+.caloriesLegend::before{
+    background-color: #E60000;
+
+}
