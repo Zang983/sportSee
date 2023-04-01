@@ -15,6 +15,7 @@ import { useParams } from 'react-router'
 import Session from '../components/chart/session/session.jsx'
 import PieChartUser from '../components/chart/piechart/piechart.jsx'
 import Spinner from '../components/spinner/spinner.jsx'
+import { Link } from 'react-router-dom'
 
 function Dashboard() {
   const { id } = useParams()
@@ -60,8 +61,9 @@ function Dashboard() {
         <div>
           <p className={styles.error}>Erreur de récupération de données</p>
           <p style={{ position: "absolute", top: 50, left: 50, fontSize: "18px" }}>
-            <a href="/">Revenir à l'accueil</a>
-          </p></div>}
+            <Link to={"/"}>Revenir à l'accueil</Link>
+          </p>
+          </div>}
 
     </div>
   )
