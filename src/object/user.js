@@ -34,7 +34,6 @@ export default class User {
         for (let value in data) {
             data[value] = new Intl.NumberFormat('en-US').format(data[value])
         }
-        console.log(data)
         return data
     }
 /**
