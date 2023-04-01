@@ -12,6 +12,7 @@ export default function Router() {
          <Routes>
             <Route path="/" element={<Index/>} />
             <Route path="/user/:id" element={<Dashboard/>} />
+            <Route path="user" element = {<Error/>}/>
             <Route path="*" element={<Error/>} />
          </Routes>
       </BrowserRouter>

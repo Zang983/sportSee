@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.svg'
 import styles from './header.module.scss'
 
@@ -6,7 +7,7 @@ export default function Header() {
         <header className={styles.header}>
             <img src={logo} alt="" />
             <ul>
-                <li><a href="/">Accueil</a></li>
+                <li><Link to="/">Accueil</Link></li>
                 <li>Profil</li>
                 <li>Réglage</li>
                 <li>Communauté</li>

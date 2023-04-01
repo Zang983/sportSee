@@ -29,9 +29,9 @@ function Dashboard() {
   }, [])
   return (
     <div className={styles.dashboard}>
-      {loading && <Spinner />}
+      {loading && <Spinner />/*Loading*/}
       {
-        !loading && user.general && user.activity && user.sessions && user.perf &&
+        !loading && user.general && user.activity && user.sessions && user.perf &&//request answer is good
         <>
           <Header />
           <Navbar />
@@ -56,7 +56,12 @@ function Dashboard() {
           </main>
         </>
       }
-      {!loading && !user.general && <p className={styles.error}>Erreur de récupération de données</p>}
+      {!loading && !user.general &&//if we have a probleme with the request
+        <div>
+          <p className={styles.error}>Erreur de récupération de données</p>
+          <p style={{ position: "absolute", top: 50, left: 50, fontSize: "18px" }}>
+            <a href="/">Revenir à l'accueil</a>
+          </p></div>}
 
     </div>
   )
